@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 100%;
+  background-color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* margin: 0px; */
+}
+
+.topo ul {
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.topo ul li {
+  text-align: center;
+  width: 100%;
+}
+
+.topo ul li a {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+  text-decoration: none;
+  color: #f9d423;
+}
+
+.topo {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: auto;
+}
+
+.topo img {
+  margin-top: 45px;
+}
+
+
+/* imagem fundo */
+
+.banner {
+  background-position: center;
+  padding-top: 30px;
+  background-image: url(/img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: auto; 
+}
+
+.banner h1 {
+  color: #f9d423;
+  padding: 10px;
+  font-family: 14px;
+  margin-left: 165px;
+  padding-top: 100px; 
+}
+
+.banner h2 {
+  color: #ffffff;
+  padding: 10px;
+  font-family: 14px;
+  margin-left: 165px;
+  margin-bottom: 100px;
+}
+
+
+/* subMenu*/
+
+.menu {
+  background-color: #474350;
+  opacity: 0.2;
+  display: flex;
+}
+
+.menu ul li a {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #f9d423;
+  display: inline-block;
+}
+
+.barramenu {
+  background-color: #4743502d;
+  color: #f9d423;
+  display: flex;
+  margin-top: 30px;
+  height: 70px;
+}
+
+.barramenu li a:hover { /* colorindo os botões do menu*/
+    background-color: #f9d423;
+    color: #ffffff;
+    border-radius: 15px;
+    width: 25%;
+    padding: 20;
+   
+  }
+
+.banner button { /* botao saibamais */
+  margin-left: 175px;
+  padding: 15px 32px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #f9d423;
+  color: #000000;
+  border: none;
+}
+
+
+
+/* text historia */
+
+.historia p{
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  padding-left: 90px;
+  padding-bottom:3%;
+  padding-top: 10px;
+}
+
+.historia h3{
+  text-align: center;
+  padding-top: 16px;
+  color: #f9d423;
+}
+
+.historia{
+  background-color: #ffffff;
+}
+
+
+/* fotoText */
+
+.historia img{
+  height: 350px;
+  float: right;
+  margin-right: 90px;
+  border-radius: 10px;
+}
+
+/* copa text */
+
+.copadomundo p {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  padding-left: 90px;
+  padding-bottom: 3%;
+  padding-top: 10px;
+}
+
+
+.copadomundo{
+  background-color: #ffffff;
+}
+
+.copadomundo h3{
+  text-align: center;
+  padding-top: 16px;
+}
+
+/* fotocatar */
+
+.copadomundo img{
+  height: 228px;
+  float:right;
+  margin-right: 50px;
+  border-radius: 10px;
+  padding-top: 10px;
+  
+}
+
+
+
+
+/* Rodape */
+
+.infor_rodape {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #f9d423;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 90px;
+
+}
+
+.rodape{
+  height: 70px;
+  padding-top: 30px;
+  background-color: #47435060;
+
+}
+
+.rodape img {
+  float: right;
+  margin-right: 100px;
+  height: 40px;
+  margin-top: -7px;
+}
+
+/* Responsividade*/ 
+
+@media screen  and (min-width: 395px) and (max-width: 1024px){
+
+  .historia p{
+    text-align: center;
+    margin-right: 10%;
+  }
+
+  .casalfoto img{
+    margin: 0 auto;
+    
+  }
+
+  .copadomundo img{
+    margin: 0 auto;
+    margin-right: 10%;
+    
+  } 
+
+  .rodape img {
+    
+    margin-right: 100px;
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  .rodape{
+    height: 120px;
+
+  }
+
+}
+
+/* fim */
